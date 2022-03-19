@@ -42,5 +42,6 @@ services:
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       TZ: 'Asia/Tokyo'
     volumes:
+#      - ./docker-contena/mysql/data:/var/lib/mysql
+      - mysql-volume:/var/lib/mysql
       - ./docker-contena/mysql/sql:/docker-entrypoint-initdb.d  #初期データ
-      - ./docker-contena/mysql/data:/var/lib/mysql

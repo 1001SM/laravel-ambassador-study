@@ -10,3 +10,10 @@ php-bash:
 build-no-cache:
 	docker compose down
 	docker compose build --no-cache
+
+down:
+	docker compose down
+
+rebuild-no-cache:
+	make build-no-cache
+	make up
