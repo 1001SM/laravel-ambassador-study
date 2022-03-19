@@ -22,4 +22,4 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 
-./docker-content/mysql/data
+/docker-content/mysql/data
