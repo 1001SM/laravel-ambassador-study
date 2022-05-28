@@ -5,7 +5,7 @@ mysql-bash:
 	docker compose exec db bash
 
 php-bash:
-	docker compose exec php bash
+	docker compose exec app bash
 
 build-no-cache:
 	docker compose down
